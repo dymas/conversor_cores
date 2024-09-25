@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor de Cores - RBB, CMYK, HLS, HSV</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="./pico.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/pico.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
-  <body>
+  <body style="background-color: rgb(143, 240, 164)">
     <main class="container grid converter">
       <div>
-        <label for="original-color-system"
-          >Selecione o sistema de cores original:
-        </label>
         <select id="original-color-system">
+          <option value="" selected>
+            Selecione o sistema de cores original
+          </option>
           <option value="rgb">RGB</option>
           <option value="cmyk">CMYK</option>
           <option value="hsl">HSL</option>
           <option value="hsv">HSV</option>
         </select>
 
-        <fieldset role="group" id="rgb-input">
+        <input
+          id="color-input"
+          type="color"
+          placeholder="Clique para selecionar uma cor"
+          class="hide"
+          value="#8ff0a4"
+        />
+
+        <fieldset role="group" id="rgb-input" class="hide">
           <input
             id="red-input"
             type="number"
@@ -45,7 +53,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="cmyk-input">
+        <fieldset role="group" id="cmyk-input" class="hide">
           <input
             id="cyan-input"
             type="number"
@@ -76,7 +84,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsl-input">
+        <fieldset role="group" id="hsl-input" class="hide">
           <input
             id="hsl-hue-input"
             type="number"
@@ -100,7 +108,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsv-input">
+        <fieldset role="group" id="hsv-input" class="hide">
           <input
             id="hsv-hue-input"
             type="number"
@@ -123,20 +131,18 @@
             placeholder="V"
           />
         </fieldset>
-      </div>
 
-      <div>
-        <label for="converted-color-system">
-          Selecione o sistema de cores para conversão:
-        </label>
         <select id="converted-color-system">
+          <option value="" selected>
+            Selecione o sistema de cores para conversão:
+          </option>
           <option value="rgb">RGB</option>
           <option value="cmyk">CMYK</option>
           <option value="hsl">HSL</option>
           <option value="hsv">HSV</option>
         </select>
 
-        <fieldset role="group" id="rgb-output">
+        <fieldset role="group" id="rgb-output" class="hide">
           <input
             id="red-output"
             type="number"
@@ -163,7 +169,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="cmyk-output">
+        <fieldset role="group" id="cmyk-output" class="hide">
           <input
             id="cyan-output"
             type="number"
@@ -198,7 +204,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsl-output">
+        <fieldset role="group" id="hsl-output" class="hide">
           <input
             id="hsl-hue-output"
             type="number"
@@ -225,7 +231,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsv-output">
+        <fieldset role="group" id="hsv-output" class="hide">
           <input
             id="hsv-hue-output"
             type="number"
@@ -254,7 +260,14 @@
       </div>
     </main>
     <footer class="container grid footer">
-      <small>&copy; 2024 Conversor de Cores - RGB, CMYK, HLS, HSV</small>
+      <article class="grid">
+        <small>
+          <img class="logo" src="./assets/logo.png" alt="Logo" />
+          &copy; 2024 Conversor de Cores - RGB, CMYK, HLS, HSV
+        </small>
+      </article>
     </footer>
   </body>
+  <script src="./assets/bundle.js"></script>
+  <script src="./assets/script.js"></script>
 </html>
