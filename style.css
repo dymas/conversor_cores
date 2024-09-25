@@ -1,0 +1,14 @@
+body { 
+  background-color: #cccccc;
+  min-height: 100vh;;
+}
+
+.converter {
+  align-items: center;
+  max-width: 920px;
+  padding: 12vh 20px;
+}
+
+.footer small {
+  text-align: center;
+}

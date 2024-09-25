@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Cores - RBB, CMYK, HLS, HSV</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./pico.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container grid converter">
+      <div>
+        <label for="original-color-system"
+          >Selecione o sistema de cores original:
+        </label>
+        <select id="original-color-system">
+          <option value="rgb">RGB</option>
+          <option value="cmyk">CMYK</option>
+          <option value="hsl">HSL</option>
+          <option value="hsv">HSV</option>
+        </select>
+
+        <fieldset role="group" id="rgb-input">
+          <input
+            id="red-input"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="R"
+          />
+          <input
+            id="green-input"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="G"
+          />
+          <input
+            id="blue-input"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="B"
+          />
+        </fieldset>
+
+        <fieldset role="group" id="cmyk-input">
+          <input
+            id="cyan-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="C"
+          />
+          <input
+            id="magenta-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="M"
+          />
+          <input
+            id="yellow-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Y"
+          />
+          <input
+            id="black-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="K"
+          />
+        </fieldset>
+
+        <fieldset role="group" id="hsl-input">
+          <input
+            id="hsl-hue-input"
+            type="number"
+            min="0"
+            max="360"
+            placeholder="H"
+          />
+          <input
+            id="hsl-saturation-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="S"
+          />
+          <input
+            id="hsl-lightness-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="L"
+          />
+        </fieldset>
+
+        <fieldset role="group" id="hsv-input">
+          <input
+            id="hsv-hue-input"
+            type="number"
+            min="0"
+            max="360"
+            placeholder="H"
+          />
+          <input
+            id="hsv-saturation-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="S"
+          />
+          <input
+            id="hsv-value-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="V"
+          />
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="converted-color-system">
+          Selecione o sistema de cores para conversão:
+        </label>
+        <select id="converted-color-system">
+          <option value="rgb">RGB</option>
+          <option value="cmyk">CMYK</option>
+          <option value="hsl">HSL</option>
+          <option value="hsv">HSV</option>
+        </select>
+
+        <fieldset role="group" id="rgb-output">
+          <input
+            id="red-output"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="R"
+            readonly
+          />
+          <input
+            id="green-output"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="G"
+            readonly
+          />
+          <input
+            id="blue-output"
+            type="number"
+            min="0"
+            max="255"
+            placeholder="B"
+            readonly
+          />
+        </fieldset>
+
+        <fieldset role="group" id="cmyk-output">
+          <input
+            id="cyan-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="C"
+            readonly
+          />
+          <input
+            id="magenta-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="M"
+            readonly
+          />
+          <input
+            id="yellow-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Y"
+            readonly
+          />
+          <input
+            id="black-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="K"
+            readonly
+          />
+        </fieldset>
+
+        <fieldset role="group" id="hsl-output">
+          <input
+            id="hsl-hue-output"
+            type="number"
+            min="0"
+            max="360"
+            placeholder="H"
+            readonly
+          />
+          <input
+            id="hsl-saturation-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="S"
+            readonly
+          />
+          <input
+            id="hsl-lightness-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="L"
+            readonly
+          />
+        </fieldset>
+
+        <fieldset role="group" id="hsv-output">
+          <input
+            id="hsv-hue-output"
+            type="number"
+            min="0"
+            max="360"
+            placeholder="H"
+            readonly
+          />
+          <input
+            id="hsv-saturation-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="S"
+            readonly
+          />
+          <input
+            id="hsv-value-output"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="V"
+            readonly
+          />
+        </fieldset>
+      </div>
+    </main>
+    <footer class="container grid footer">
+      <small>&copy; 2024 Conversor de Cores - RGB, CMYK, HLS, HSV</small>
+    </footer>
+  </body>
+</html>
