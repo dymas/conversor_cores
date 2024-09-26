@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="./assets/imgs/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/pico.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="manifest" href="./app.webmanifest">
+    <link rel="manifest" href="./app.webmanifest" />
   </head>
   <body style="background-color: rgb(143, 240, 164)">
     <main class="container grid converter">
@@ -294,4 +294,9 @@
   </body>
   <script src="./assets/js/bundle.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script>
+    navigator.serviceWorker.register("/sw.js").then((registration) => {
+      console.log("Service worker registrado.");
+    });
+  </script>
 </html>

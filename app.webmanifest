@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "Conversor de Cores",
   "start_url": "./",
   "theme_color": "#8ff0a4",
@@ -7,6 +8,43 @@
   "lang": "pt-br",
   "description": "Conversor de cores: RGB, CMYK, HLS, HSV",
   "display": "standalone",
+  "screenshots": [
+    {
+      "src": "./assets/imgs/screenshots/1.png",
+      "sizes": "1440x2960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Página inicial do Conversor de Cores"
+    },
+    {
+      "src": "./assets/imgs/screenshots/2.png",
+      "sizes": "1440x2960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Exemplo de conversão de cor"
+    },
+    {
+      "src": "./assets/imgs/screenshots/3.png",
+      "sizes": "1440x2960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Outro exemplo de conversão."
+    },
+    {
+      "src": "./assets/imgs/screenshots/wide1.png",
+      "sizes": "2360x1640",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Página inicial do Conversor de Cores no desktop."
+    },
+    {
+      "src": "./assets/imgs/screenshots/wide2.png",
+      "sizes": "2360x1640",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Exemplo de conversão de cor no desktop."
+    }
+  ],
   "icons": [
     {
       "src": "assets/AppImages/windows11/SmallTile.scale-100.png",
