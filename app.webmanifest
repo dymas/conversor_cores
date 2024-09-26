@@ -2,6 +2,7 @@
   "name": "Conversor de Cores",
   "start_url": "./",
   "theme_color": "#8ff0a4",
+  "orientation": "portrait-primary",
   "background-color": "#8ff0a4",
   "lang": "pt-br",
   "description": "Conversor de cores: RGB, CMYK, HLS, HSV",
