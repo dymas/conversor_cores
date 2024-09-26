@@ -1,5 +1,11 @@
 {
   "name": "Conversor de Cores",
+  "start_url": "/",
+  "theme_color": "#8ff0a4",
+  "background-color": "#8ff0a4",
+  "lang": "pt-br",
+  "description": "Conversor de cores: RGB, CMYK, HLS, HSV",
+  "display": "standalone",
   "icons": [
     {
       "src": "assets/AppImages/windows11/SmallTile.scale-100.png",
@@ -449,10 +455,5 @@
       "src": "assets/AppImages/ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "theme_color": "#8ff0a4",
-  "background-color": "#8ff0a4",
-  "lang": "pt-br",
-  "description": "Conversor de cores - RGB, CMYK, HLS, HSV",
-  "display": "standalone"
+  ]
 }
