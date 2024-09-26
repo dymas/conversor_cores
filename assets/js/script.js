@@ -1,11 +1,16 @@
 function openColorSystemInputs(color_system) {
+  const colorForms = {
+    color_input: document.getElementById("color-input"),
+    color_input_label: document.getElementById("color-input-label"),
+    converted_color_system_label: document.getElementById("converted-color-system-label"),
+    converted_color_system: document.getElementById("converted-color-system"),
+  }
+
   Object.values(inputs).forEach((input) => input.classList.add("hide"));
-  document.getElementById("color-input").classList.add("hide");
-  document.getElementById("color-input-label").classList.add("hide");
+  Object.values(colorForms).forEach((input) => input.classList.add("hide"));
 
   if (inputs[color_system]) {
-    document.getElementById("color-input").classList.remove("hide");
-    document.getElementById("color-input-label").classList.remove("hide");
+    Object.values(colorForms).forEach((input) => input.classList.remove("hide"));
     inputs[color_system].classList.remove("hide");
   }
 }
