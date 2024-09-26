@@ -1,6 +1,6 @@
 {
   "name": "Conversor de Cores",
-  "start_url": "/",
+  "start_url": "./",
   "theme_color": "#8ff0a4",
   "background-color": "#8ff0a4",
   "lang": "pt-br",
