@@ -11,17 +11,22 @@
   </head>
   <body style="background-color: rgb(143, 240, 164)">
     <main class="container grid converter">
-      <div>
+      <article class="swing-in-top-fwd">
+        <label for="original-color-system">
+          Aperte no menu à seguir para escolher o sistema de cores inicial:
+        </label>
         <select id="original-color-system">
-          <option value="" selected>
-            Aperte para escolher o sistema de cores
-          </option>
+          <option value="" selected>Selecione...</option>
           <option value="rgb">RGB</option>
           <option value="cmyk">CMYK</option>
           <option value="hsl">HSL</option>
           <option value="hsv">HSV</option>
         </select>
 
+        <label for="color-input" id="color-input-label" class="hide swing-in-top-fwd">
+          Aperte na cor abaixo para selecionar uma cor, ou digite os números em
+          cada espaço:
+        </label>
         <input
           id="color-input"
           type="color"
@@ -30,7 +35,7 @@
           value="#8ff0a4"
         />
 
-        <fieldset role="group" id="rgb-input" class="hide">
+        <fieldset role="group" id="rgb-input" class="hide swing-in-top-fwd">
           <input
             id="red-input"
             type="number"
@@ -57,7 +62,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="cmyk-input" class="hide">
+        <fieldset role="group" id="cmyk-input" class="hide swing-in-top-fwd">
           <input
             id="cyan-input"
             type="number"
@@ -92,7 +97,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsl-input" class="hide">
+        <fieldset role="group" id="hsl-input" class="hide swing-in-top-fwd">
           <input
             id="hsl-hue-input"
             type="number"
@@ -119,7 +124,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsv-input" class="hide">
+        <fieldset role="group" id="hsv-input" class="hide swing-in-top-fwd">
           <input
             id="hsv-hue-input"
             type="number"
@@ -143,17 +148,18 @@
           />
         </fieldset>
 
+        <label for="converted-color-system">
+          Aperte no menu para escolher o sistema de cores para conversão:
+        </label>
         <select id="converted-color-system">
-          <option value="" selected>
-            Aperte para escolher o sistema de cores para conversão
-          </option>
+          <option value="" selected>Selecione...</option>
           <option value="rgb">RGB</option>
           <option value="cmyk">CMYK</option>
           <option value="hsl">HSL</option>
           <option value="hsv">HSV</option>
         </select>
 
-        <fieldset role="group" id="rgb-output" class="hide">
+        <fieldset role="group" id="rgb-output" class="hide swing-in-top-fwd">
           <input
             id="red-output"
             type="number"
@@ -183,7 +189,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="cmyk-output" class="hide">
+        <fieldset role="group" id="cmyk-output" class="hide swing-in-top-fwd">
           <input
             id="cyan-output"
             type="number"
@@ -222,7 +228,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsl-output" class="hide">
+        <fieldset role="group" id="hsl-output" class="hide swing-in-top-fwd">
           <input
             id="hsl-hue-output"
             type="number"
@@ -252,7 +258,7 @@
           />
         </fieldset>
 
-        <fieldset role="group" id="hsv-output" class="hide">
+        <fieldset role="group" id="hsv-output" class="hide swing-in-top-fwd">
           <input
             id="hsv-hue-output"
             type="number"
@@ -281,9 +287,9 @@
             readonly
           />
         </fieldset>
-      </div>
+      </article>
     </main>
-    <footer class="container grid footer">
+    <footer class="container grid footer slide-in-blurred-top">
       <article class="grid">
         <small>
           <img class="logo" src="./assets/imgs/logo.png" alt="Logo" />

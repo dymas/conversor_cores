@@ -1,9 +1,11 @@
 function openColorSystemInputs(color_system) {
   Object.values(inputs).forEach((input) => input.classList.add("hide"));
   document.getElementById("color-input").classList.add("hide");
+  document.getElementById("color-input-label").classList.add("hide");
 
   if (inputs[color_system]) {
     document.getElementById("color-input").classList.remove("hide");
+    document.getElementById("color-input-label").classList.remove("hide");
     inputs[color_system].classList.remove("hide");
   }
 }
