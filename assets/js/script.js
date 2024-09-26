@@ -30,14 +30,14 @@ function updateColors(color) {
   Object.keys(inputs).forEach((key) => {
     const fieldset = inputs[key];
     fieldset.querySelectorAll("input").forEach((input, index) => {
-      input.value = colorConversions[key][index];
+      input.value = Math.round(colorConversions[key][index]);
     });
   });
 
   Object.keys(outputs).forEach((key) => {
     const output = outputs[key];
     output.querySelectorAll("input").forEach((input, index) => {
-      input.value = colorConversions[key][index];
+      input.value = Math.round(colorConversions[key][index]);
     });
   });
 
